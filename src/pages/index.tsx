@@ -15,6 +15,7 @@ import { getUrl } from '../utils/url';
 import { readCache, writeCache } from '../utils/cache';
 import NameIconButton from '../components/name-icon-button';
 import JcutFalconIcon from '../../resource/icons/favicon.svg';
+import { StaticImage } from 'gatsby-plugin-image';
 
 interface Data {
   mirrorDocs: {
@@ -162,6 +163,7 @@ const Index = ({ data }: { data: Data }) => {
               sx={{
                 display: 'flex',
                 flexDirection: 'row',
+                alignItems: 'center', // 确保内容垂直居中
               }}
             >
               <Box
@@ -178,6 +180,7 @@ const Index = ({ data }: { data: Data }) => {
                   direction="row"
                   justifyContent="space-between"
                   alignItems="center"
+                  spacing={0}
                 >
                   <Grid item>
                     <Typography
@@ -188,6 +191,23 @@ const Index = ({ data }: { data: Data }) => {
                     >
                       <Trans>JCUTMirror</Trans>
                     </Typography>
+                  </Grid>
+                  <Grid item>
+                    <Box
+                      sx={{
+                        width: 220,
+                        display: { xs: 'none', sm: 'none', md: 'none', lg: 'block' },
+                        ml: 2,
+                        alignItems: 'center',
+                      }}
+                    >
+                      <StaticImage
+                        src="../../resource/icons/jcutio.png"
+                        alt="JCUT Logo"
+                        placeholder="blurred"
+                        width={220}
+                      />
+                    </Box>
                   </Grid>
                   <Grid item sx={{ display: { xs: 'none', sm: 'block' } }}>
                     <NameIconButton />
