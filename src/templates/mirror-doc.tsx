@@ -168,7 +168,7 @@ const MirrorDoc = ({ data, children }: PropsWithChildren<MirrorDocProps>) => {
             zIndex: -1,
           }}
         >
-          {TitleMirrorIcon(mirrorId, 'rgba(255, 205, 168,0.25)', '20rem')}
+          {TitleMirrorIcon(mirrorId, 'rgba(6,78,119,0.23)', '20rem')}
         </Box>
       </Box>
       <Box zIndex={1} position="sticky">

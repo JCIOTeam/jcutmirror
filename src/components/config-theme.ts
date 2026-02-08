@@ -7,51 +7,51 @@ function configTheme(mode: PaletteMode): ThemeOptions {
       mode === 'light'
         ? {
             primary: {
-              main: '#FFAD84',
-              light: '#FFE382',
-              dark: '#FFAD84',
+              main: '#59c1dc',
+              light: '#79d4d8',
+              dark: '#328dad',
             },
             neutral: {
               main: '#f2f7f9',
             },
             success: {
-              main: '#FFC47E',
+              main: '#59c1dc',
             },
             warning: {
-              main: '#EF9595',
+              main: '#f8903b',
             },
             info: {
-              main: '#E48586',
-              light: '#FCBAAD',
+              main: '#6780da',
+              light: '#63a0cf',
             },
             error: {
-              main: '#C23373',
+              main: '#e44919',
             },
             background: {
-              default: '#F0F3F8',
+              default: '#f0f3f8',
             },
           }
         : {
             primary: {
-              main: '#FFAD84',
-              light: '#FFE382',
-              dark: '#FFAD84',
+              main: '#79d4d8',
+              light: '#abece4',
+              dark: '#328dad',
             },
             neutral: {
               main: '#121212',
             },
             success: {
-              main: '#FFC47E',
+              main: '#79d4d8',
             },
             warning: {
-              main: '#FFA732',
+              main: '#f8903b',
             },
             info: {
-              main: '#E48586',
-              light: '#FCBAAD',
+              main: '#6780da',
+              light: '#63a0cf',
             },
             error: {
-              main: '#C23373',
+              main: '#e44918',
             },
             background: {
               default: '#121212',
